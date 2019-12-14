@@ -9,6 +9,9 @@ class Transfer
     @amount = amt
     from.balance -= amt
     to.balance += amt
+  end
+
+  def valid?(account)
 
   end
 end
