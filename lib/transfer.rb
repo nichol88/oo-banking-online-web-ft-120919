@@ -11,7 +11,7 @@ class Transfer
     to.balance += amt
   end
 
-  def valid?(account)
+  def valid?(act1, act2)
     true if account.status == "open"
   end
 end
