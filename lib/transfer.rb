@@ -7,8 +7,7 @@ class Transfer
     @receiver = to
     @status = "pending"
     @amount = amt
-    from.balance -= amt
-    to.balance += amt
+
   end
 
   def valid?
@@ -16,5 +15,8 @@ class Transfer
     false
   end
 
-  
+  def execute_transcation
+    from.balance -= amt
+    to.balance += amt
+  end
 end
