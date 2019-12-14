@@ -1,6 +1,6 @@
 class Transfer
   # your code here
-  def initialize(acct1, acct2, amt)
+  def initialize(from, to, amt)
 
   end
 end
