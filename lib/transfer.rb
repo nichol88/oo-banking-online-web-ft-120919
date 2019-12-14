@@ -21,10 +21,14 @@ class Transfer
       @sender.balance -= @amount
       @receiver.balance += @amount
       @status = "complete"
-      @last_trans = [@sender, @receiver, @balance]
+      @last_trans = [@sender, @receiver, @amount]
     else
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
+  end
+
+  def reverse_transfer
+    @last_trans[0].balance +=
   end
 end
