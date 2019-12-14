@@ -6,6 +6,7 @@ class Transfer
     @sender = from
     @receiver = to
     @status = "pending"
+    @amount = amt
     from.balance -= amt
     to.balance += amt
 
