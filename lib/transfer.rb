@@ -12,7 +12,7 @@ class Transfer
 
   def valid?
     return false if @sender.balance < @amount # || @receiver.balance < @amount
-    return true if @sender.valid? && @receiver.valid? && @status != "complete"
+    return true if @sender.valid? && @receiver.valid? && @status == "pending"
     false
   end
 
