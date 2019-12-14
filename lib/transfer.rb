@@ -15,7 +15,7 @@ class Transfer
     false
   end
 
-  def execute_transcation
+  def execute_transaction
     from.balance -= amt
     to.balance += amt
   end
