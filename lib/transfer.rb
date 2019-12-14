@@ -29,6 +29,7 @@ class Transfer
   end
 
   def reverse_transfer
-    @last_trans[0].balance +=
+    @last_trans[0].balance += @last_trans[3]
+    @last_trans[1].balance += @last_trans[3]
   end
 end
