@@ -12,6 +12,6 @@ class Transfer
   end
 
   def valid?(account)
-
+    true if account.status == "open"
   end
 end
