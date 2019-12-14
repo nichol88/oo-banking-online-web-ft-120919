@@ -30,9 +30,9 @@ class Transfer
 
   def reverse_transfer
     if @status == "executed"
-    @last_trans[0].balance += @last_trans[2]
-    @last_trans[1].balance -= @last_trans[2]
-    @status = "reversed"
+      @last_trans[0].balance += @last_trans[2]
+      @last_trans[1].balance -= @last_trans[2]
+      @status = "reversed"
     end
   end
 end
