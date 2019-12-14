@@ -1,5 +1,6 @@
 class BankAccount
-  def initialize
-    
+  attr_reader :id
+  def initialize(id)
+    @id = id
   end
 end
