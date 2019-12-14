@@ -11,4 +11,7 @@ def deposit(amt)
   @balance += amt
 end
 
+def display_balance
+  "#{@balance}"
+end
 end
