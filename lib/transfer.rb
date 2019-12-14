@@ -30,7 +30,7 @@ class Transfer
   end
 
   def reverse_transfer
-    puts "status: #{@status}"
+    #puts "status: #{@status}"
     if @status == "complete"
       @last_trans[0].balance += @last_trans[2]
       @last_trans[1].balance -= @last_trans[2]
