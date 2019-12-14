@@ -12,6 +12,6 @@ class Transfer
   end
 
   def valid?(act1, act2)
-    true if account.status == "open"
+    true if act1.status == "open" && act2.status == "open"
   end
 end
