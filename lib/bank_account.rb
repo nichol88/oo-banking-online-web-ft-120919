@@ -17,5 +17,6 @@ end
 
 def valid?
   true if @balance > 0 && @status == "open"
+  false
 end
 end
