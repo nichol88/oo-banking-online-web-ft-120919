@@ -35,4 +35,4 @@ class Transfer
       @status = "reversed"
     end # if
   end #reverse_transfer
-end
+end # class
