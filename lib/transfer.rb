@@ -24,7 +24,7 @@ class Transfer
       @status = "complete"
       @last_trans = [@sender, @receiver, @amount]
     else
-      self.status = "rejected"
+      @status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
   end
