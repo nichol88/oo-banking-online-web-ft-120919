@@ -11,7 +11,7 @@ class Transfer
     to.balance += amt
   end
 
-  def valid?(act1, act2)
-    true if act1.status == "open" && act2.status == "open"
+  def valid?
+    true if @sender.status == "open" && @receiver.status == "open"
   end
 end
